@@ -1,4 +1,4 @@
-def caesar():
+def caesar_encrypt():
 
     plain_text=input("enter message")
     key=int(input("enter number of keys"))
@@ -9,7 +9,7 @@ def caesar():
             cipher = cipher + alphabet[(alphabet.index(c) + key) % (len(alphabet))]
     return ("your encrypted message is:"  + cipher)
 
-def caesar2():
+def caesar_decrypt():
     plain_text=input("enter message")
     key=int(input("enter number of keys"))
     alphabet="abcdefghijklmnopqrstuvwxyz"
